@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(kubectl get pods:*)",
+      "Bash(kubectl get:*)",
+      "Bash(curl:*)",
+      "Bash(helm list:*)",
+      "Bash(sudo tee:*)",
+      "Bash(kubectl logs:*)",
+      "Bash(kubectl describe:*)",
+      "Bash(helm upgrade:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
