@@ -11,6 +11,9 @@ jobs:
   docker:
     runs-on: ubuntu-latest
     steps:
+      - name: Shorten commit id
+        shell: bash
+        run: echo "COMMIT_ID=${{ GITHUB_SHA::6 }}" >> $GITHUB_ENV
       - name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
@@ -20,4 +23,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: kevinhood/python-app:${{ github.sha }}
+          tags: kevinhood/python-app:${{ env.COMMIT_ID }}
