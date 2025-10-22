@@ -20,4 +20,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: kevinhood/python-app:${{ GITHUB_SHA::6 }}
+          tags: kevinhood/python-app:${{ github.sha }}
