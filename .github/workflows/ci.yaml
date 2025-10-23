@@ -23,4 +23,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: kevinhood/python-app:${{ env.COMMIT_ID }}
+          tags: puffLive/python-app:${{ env.COMMIT_ID }}
