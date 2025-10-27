@@ -28,7 +28,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: docker.io/pufflive/python-app:${{ env.COMMIT_ID }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/python-app:${{ env.COMMIT_ID }}
 
   cd:
     needs: ci
