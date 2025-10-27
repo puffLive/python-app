@@ -11,6 +11,8 @@ jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
       - name: Shorten commit id
         shell: bash
         run: echo "COMMIT_ID=${GITHUB_SHA::6}" >> "$GITHUB_ENV"
