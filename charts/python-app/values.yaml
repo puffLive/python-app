@@ -2,7 +2,7 @@ replicaCount: 1
 image:
   repository: kevinhood/python-app
   pullPolicy: IfNotPresent
-  tag: d014f1
+  tag: 0fe8ae
 imagePullSecrets: []
 nameOverride: ''
 fullnameOverride: ''
