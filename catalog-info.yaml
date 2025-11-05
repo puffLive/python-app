@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: python-app
+  description: Python app that displays the current time.
+  annotations:
+    github.com/project-slug: pufflive/python-app
+spec:
+  type: service
+  owner: development
+  lifecycle: experimental
