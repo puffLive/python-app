@@ -1,0 +1,11 @@
+site_name: 'python-app'
+site_description: 'Main documentation for python-app features and framework APIs'
+repo_url: https://github.com/pufflive/python-app
+edit_uri: edit/master/docs
+
+plugins:
+  - techdocs-core
+
+nav:
+  - Overview:
+      - Getting started: 'docs/index.md'
